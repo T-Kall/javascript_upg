@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Registrering av personuppgifter">
+
+    <title>Inloggning</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="bakgrund">
+        <div class="container-center">
+            <div class="center border">
+
+                <nav class="navbar navbar-dark bg-color mb-3">
+                    <div class="container">
+                        <span class="navbar-brand mb-0 h1">Fast track to heaven</span>
+                    </div>
+                </nav>
+
+
+                <div class="container">
+
+                    <form id="regForm">
+
+                        <div class="form-row">
+
+                            <!-- E-post -->
+                            <div class="form-group col-md-12">
+                                <label for="email">* E-post</label>
+                                <input id="email" type="email" class="form-control" placeholder="E-post">
+                                <div class="invalid-feedback">Fyll i en giltig e-postadress</div>
+                            </div>
+
+                            <!--  Lösenord -->
+                            <div class="form-group col-md-12" autocomplete="off">
+                                <label for="password">Lösenord (8 tecken, versaler, gemener, siffra/specialtecken)
+                                </label>
+                                <input id="password" type="password" class="form-control" placeholder="Lösenord">
+                                <div class="invalid-feedback">Fyll i ett lösenord med minst 8 tecken som innehåller
+                                    minst en versal, en gemen samt en siffra/specialtecken</div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="form-group  col-md-12 mt-3 mb-4">
+                                <button id="btnSubmit" type="submit" class="btn btn-info  col-md-auto">Logga
+                                    in</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

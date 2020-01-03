@@ -1,0 +1,191 @@
+
+/* CSS Google Font */
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap"');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --darkred:#440502;
+    --red:#940b04;
+    --lightred:#c08a87;
+    --grey:#d8d6d6;
+    --black:#000000;
+    --white:#ffffff;
+    --green: #065c06 
+}
+
+body {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 14px;
+    /* font-size: 0.875rem; */
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black);
+    background-color: var(--grey);
+  }
+
+
+
+header {
+    background-image: url("images/black-chain.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    padding: 10rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+.reg-header {
+    background-image: url("images/silhouette.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.container-center {
+    height: 100vh; 
+    width: 100vw;
+    display: flex; 
+}
+
+.center {
+    margin: auto;
+    text-align: center;   
+}
+
+
+header h1,
+.reg-header h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px #000000;
+}
+
+
+header a:link,
+header a:visited,
+.reg-header  a:link,
+.reg-header a:visited  {
+    color:  var(--white);
+    border:  var(--white) 2px solid;
+    border-radius: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    background-color: var(--darkred);
+    letter-spacing: 2px;
+}
+
+header a:hover,
+header a:active,
+.reg-header a:hover,
+.reg-header a:active {
+    color:  var(--white);
+    border:  var(--white) 2px solid;
+    text-decoration: none;
+    background-color: #000000;
+}
+
+
+.navbar {
+    color: white;
+    background-color: var(--darkred);
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase; 
+}
+
+.navbar-brand {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);  
+}
+
+/*** Formulär ***/
+
+/* #regForm textarea:focus,
+#regForm input:focus {
+    outline: 0;
+    border-color: var(--black); 
+    box-shadow: 0 0 0.50rem 0.015rem var(--black);
+}
+
+.form-control:focus::placeholder {
+  color: var(--grey);
+}   */
+
+#check {
+    margin-left: 0rem;
+}
+
+#checkConfirm .form-check-label {
+    margin-left: 1rem;
+}
+
+
+#btnSubmit,
+#btnSubmit:link,
+#btnSubmit:visited {
+    color: #fff;
+    background-color: var(--darkred);
+    border-color: var(--darkred);
+}
+
+
+#btnSubmit:hover, 
+#btnSubmit:active {
+    color: #fff;
+    background-color: var(--darkred);
+    border-color: var(--darkred);
+}
+
+/* .is-invalid {
+    border-color: var(--red) !important;
+    color: var(--red) !important;
+}
+
+.invalid-feedback {
+    color: var(--red) !important;
+} 
+
+.is-valid {
+    border-color: var(--green)!important;
+    color: var(--green)!important;
+} 
+
+
+#checkConfirm .form-check-input.is-invalid~.form-check-label, 
+.was-validated .form-check-input:invalid~.form-check-label {
+    color: var(--red) !important;
+}
+
+#checkConfirm .form-check-input.is-valid~.form-check-label, 
+.was-validated .form-check-input:valid~.form-check-label {
+    color: var(--green)!important;
+}
+
+
+.form-check-input.is-invalid ~ .form-check-label, .was-validated .form-check-input:invalid ~ .form-check-label {
+    color: var(--red) !important;
+}
+
+    .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+        color: var(--green)!important;
+    } */

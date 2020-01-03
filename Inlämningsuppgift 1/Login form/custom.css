@@ -1,0 +1,207 @@
+/* CSS Google Font */
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap"');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --darkblue:#0c0f2f;
+    --blue:#38519f;
+    --black:#000000;
+    --white:#ffffff;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545;
+    padding-right: 0;
+
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #28a745;
+     padding-right: 0;
+
+}
+
+.form-control {
+    display: block;
+    width: 99%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+}
+
+.bakgrund {
+    background-image: url("images/ballonandbirds.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-color {
+    background-color: var(--darkblue);
+}
+
+.navbar {
+    /* position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+/* .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+.btn-info {
+background-color:  var(--darkblue);
+border-color:  var(--darkblue);
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color:  var(--blue);
+    border-color:  var(--blue);
+}
+
+
+/* centrera formulär*/
+
+
+.container-center {
+    height: 100vh; 
+    width: 100vw;
+    display: flex; 
+    padding: 10px;
+    
+}
+
+.center {
+    margin: auto;
+    background-color: #ffffffa4;
+}
+
+.border {
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   border: 3px solid #ffffffe3;
+} 
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 540px;
+}
+
+/* sid 2 - inloggad */
+
+.center_inloggad {
+    margin: auto;
+}
+
+.log-header {
+    background-image: url("images/stairway.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.logcontainer-center {
+    height: 100vh; 
+    width: 100vw;
+    display: flex; 
+}
+
+.log-header h1 {
+    color:  var(--white);
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px  var(--black);
+}
+
+.log-header a:link,
+.log-header a:visited  {
+    color:  var(--white);
+    border:  var(--white) 2px solid;
+    border-radius: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem;
+    background-color: var(--darkblue);
+    letter-spacing: 2px;
+}
+
+.log-header a:hover,
+.log-header a:active {
+    color:  var(--white);
+    border:  var(--white) 2px solid;
+    text-decoration: none;
+    background-color: var(--blue);
+}
+
+/* 
+@media (min-width: 1200px) {
+.container {
+    max-width: 1140px;
+}
+}
+
+@media (min-width: 992px) {
+.container {
+    max-width: 960px;
+}
+}
+
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+}
+} */
+
+/* @media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+} */
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Registrering av personuppgifter">
+
+    <title>Kontrakt</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <!-- Navbar och header -->
+
+
+    <nav class="navbar navbar-dark mb-0">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Kontrakt med Lucifer</span>
+        </div>
+    </nav>
+
+    <header class="mb-3">
+        <div class="container">
+            <h1>Känn skuggorna krypa närmare...</h1>
+            <a href="#firstName">Gå med nu!</a>
+        </div>
+    </header>
+
+
+
+
+    <div class="container">
+
+        <!-- Formulär Del 1 -->
+
+        <form id="regForm">
+
+            <p class="h5 mt-1 mb-3">Personlig information</p>
+            <div class="form-row">
+
+                <!--  Förnamn -->
+                <div class="form-group order-1 order-md-1 col-md-6">
+                    <label for="firstName">* Förnamn</label>
+                    <input id="firstName" type="text" class="form-control" placeholder="Förnamn">
+                    <div class="invalid-feedback">Fyll i ditt förnamn.</div>
+                </div>
+
+                <!--  Efternamn -->
+                <div class="form-group order-2 order-md-2 col-md-6">
+                    <label for="lastName">* Efternamn</label>
+                    <input id="lastName" type="text" class="form-control" placeholder="Efternamn">
+                    <div class="invalid-feedback">Fyll i ditt efternamn.</div>
+                </div>
+
+                <!--  E-post -->
+                <div class="form-group order-3 order-md-3 col-md-6">
+                    <label for="email">* E-post</label>
+                    <input id="email" type="email" class="form-control" placeholder="E-post">
+                    <div class="invalid-feedback">Fyll i en giltig e-postadress</div>
+                </div>
+
+                <!-- Ålder - select -->
+                <div class="form-group order-4 order-md-4 col-md-2">
+                    <label for="age">* Ålder</label>
+                    <select name="age" id="age" class="form-control custom-select">
+                        <option disabled selected hidden value="">Ålder</option>
+                        <option value="-18">Under 18</option>
+                        <option value="+18">Över 18</option>
+                    </select>
+                    <div class="invalid-feedback">Välj vilken åldersgrupp du tillhör</div>
+                </div>
+
+
+                <!-- Kön - Radiobutton -->
+                <div class="form-group order-5 order-md-5 col-md-4">
+                    <label>* Kön</label>
+
+                    <div id="gender">
+
+                        <div class="form-radio form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="m" value="option1">
+                            <label class="form-check-label" for="m">
+                                Man
+                            </label>
+                        </div>
+
+                        <div class="form-radio form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="f" value="option2">
+                            <label class="form-check-label" for="f">
+                                Kvinna
+                            </label>
+
+                        </div>
+
+                        <div class="invalid-feedback">Välj kön</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- Formulär Del 2 -->
+            <p class="h5 mt-5 mb-3">Kontoinformation</p>
+
+            <div class="form-row">
+
+                <!--   Användarnamn -->
+                <div class="form-group order-1 order-md-1 col-md-6">
+                    <label for="userName">* Användarnamn (minst 5 tecken)</label>
+                    <input id="userName" type="text" class="form-control" placeholder="User name">
+                    <div class="invalid-feedback">Fyll i ett användarnamn med minst 5 tecken </div>
+                </div>
+
+                <!--  Lösenord -->
+                <div class="form-group  order-2 order-md-2 col-md-6">
+                    <!-- offset-md-2 -->
+                    <label for="password">* Lösenord (minst 5 tecken)</label>
+                    <input id="password" type="password" class="form-control" placeholder="Lösenord">
+                    <div class="invalid-feedback">Fyll i samma lösenord med minst 5 tecken</div>
+                </div>
+
+                <!--  Bekräfta lösenord -->
+                <div class="form-group order-3 order-md-4 col-md-6">
+                    <!-- offset-md-2 -->
+                    <label for="confirmPassword">* Bekräfta lösenordet</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Bekräfta Lösenord">
+                    <div class="invalid-feedback">Lösenorden matchar inte</div>
+                </div>
+
+
+
+
+                <!-- Meddelande -->
+                <div class="form-group order-4 order-md-5 col-md-12">
+                    <label for="message">Meddelande</label>
+                    <textarea class="form-control" id="message" placeholder="Fyll i ev. meddelande"></textarea>
+                </div>
+
+
+                <!-- Checkbox -->
+                <div id="checkConfirm" class="form-check order-5 order-md-3 col-md-6 mt-4 mb-3" autocomplete="off">
+
+                    <input type="checkbox" id="check" class="form-check-input" name="check" value="">
+                    <label class="form-check-label form-check-inline" for="check">* Jag förbinder mig till att göra allt Lucifer ber mig om </label>
+                    <div class="invalid-feedback">Du måste bekräfta innan du skickar</div>
+
+                </div>
+
+                <!-- Submit -->
+                <div class="form-group order-6  order-md-6 col-md-6 mt-3 mb-5">
+                    <button id="btnSubmit" type="submit" class="btn col-md-auto">Registrera</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
